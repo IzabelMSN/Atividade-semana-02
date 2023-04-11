@@ -8,8 +8,13 @@ $numeros = array("2", "5", "8", "12", "18", "23", "34", "47", "51", "55", "65", 
 
 $numSolicitado = readline("Escreva um número: ");
 
-if (in_array($numSolicitado,$numeros)) {
-    echo "O número ".$numSolicitado." foi encontrado";
-}else{
-    echo "O número ".$numSolicitado." não foi encontrado";
+foreach ($numeros as $number_k => $number_v) {
+    if($numSolicitado == $number_v){
+        echo "O número ".$numSolicitado." foi encontrado";
+        break;
+
+    }else{
+        echo "O número ".$numSolicitado." não foi encontrado";
+        break;
+    }
 }

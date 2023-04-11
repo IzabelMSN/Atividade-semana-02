@@ -7,10 +7,13 @@ com base no número de vendas realizadas e no valor total das vendas.
 Utilize o operador de multiplicação e atribuição para calcular a comissão e atualizar o salário base.*/
 
 $salario = 2.500;
-$vendas= 13;
-$Valorvendas= 500;
-$total = ($Valorvendas * $vendas) % 5;
+$porcentagem= 5;
+$totalVendas = 25;
 
-$salario *= $total;
+$totalVendas *= 500;
+
+$total = ($porcentagem * $totalVendas)/100;
+
+$salario += $salario + $total;
 
 echo $salario;
