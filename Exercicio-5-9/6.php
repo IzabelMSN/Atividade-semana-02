@@ -5,5 +5,7 @@ O programa deve calcular o valor do imposto e imprimir o valor total do produto 
 
 $valorProduto = readline("Insira um valor para o produto X: ");
 $percentualImposto = readline("Agora insira o percentual de imposto para o produto X: ");
+$impostoCalculado = ($percentualImposto/100) + 1;
 
-echo "O valor total do produto com imposto é " . ($percentualImposto * $valorProduto) / 100;
+
+echo "O valor total do produto com imposto é " . ($impostoCalculado * $valorProduto);
